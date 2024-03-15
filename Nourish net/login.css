@@ -9,7 +9,7 @@
 body {
     font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
-    background-image:url( "signup.jpg"); 
+    background-image:url( "Images/signup.jpg"); 
     background-size: cover; /* Cover the entire viewport */
     background-repeat: no-repeat; /* Do not repeat */
     background-position: center; /* Center the background image */
