@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nourish Net - Sign Up</title>
+    <style>
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            background-image: url("Images/signup.jpg");
+            background-size: cover; /* Cover the entire viewport */
+            background-repeat: no-repeat; /* Do not repeat */
+            background-position: center; /* Center the background image */
+            color: #333;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: transparent;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            size: 10px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Montserrat', Arial, sans-serif;
+            transition: color 0.3s ease;
+            font-size: 1.2rem; /* Increased font size */
+        }
+
+        nav ul li a:hover {
+            color: #fffafa;
+        }
+
+        /* Container styles */
+        .container {
+            width: 60%; /* Increased container width */
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 50px; /* Reduced margin-top */
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            padding: 15px; /* Reduced padding */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow effect */
+        }
+
+        .container h1 {
+            font-size: 2.8rem; /* Increased font size */
+            margin-bottom: 20px;
+            color: #333;
+            font-family: 'Pacifico', Arial, sans-serif;
+        }
+
+        /* Form styles */
+        form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+            gap: 20px; /* Gap between form elements */
+            align-items: center;
+            justify-items: center;
+        }
+
+        label {
+            font-size: 1.4rem; /* Increased font size */
+            margin-top: 20px; /* Increased margin-top */
+            color: #555; /* Changed text color */
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%; /* Full width input */
+            padding: 10px; /* Increased padding */
+            border-radius: 10px; /* Increased border radius */
+            border: 1px solid #ccc; /* Light grey border */
+        }
+
+        input[type="file"] {
+            background-color: white; /* White background for file input */
+            border: none; /* Remove border */
+            padding: 15px; /* Increased padding */
+        }
+
+        button, input[type="file"] {
+            background-color: #fff; /* Orange button */
+            color: #000000;
+            border: none;
+            padding: 15px 30px; /* Increased padding */
+            font-size: 1.4rem; /* Increased font size */
+            border-radius: 10px; /* Increased border radius */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+         {
+            background-color: #ff8000; /* Darker orange on hover */
+        }
+
+        button[type="submit"] {
+            grid-column: span 2; /* Make button span two columns */
+            background-color: #ff8000; /* Orange button */
+        }
+
+        button[type="submit"]:hover {
+            background-color: #ff8000; /* Darker orange on hover */
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="home.html" target="_blank">Home</a></li>
+        <li><a href="About us.html" target="_blank">Aboutus</a></li>
+    </ul>
+</nav>
+
+<!-- Sign Up Form -->
+<div class="container">
+    <h1>Sign Up</h1>
+    <form id="signup-form" action="data.file">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+        <label for="restaurant-name">Restaurant/Grocery/Bakery Name</label>
+        <input type="text" id="restaurant-name" name="restaurant-name" required placeholder="Enter the name">
+
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required placeholder="Enter address">
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="4" required ></textarea>
+
+        <label for="photo">Upload a Photo</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Enter valid mail id">
+
+        <label for="contact-number">Contact Number</label>
+        <input type="tel" id="contact-number" name="contact-number" required placeholder="Enter your contact number">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Enter password">
+
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" required placeholder="confirm password">
+
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Nourish Net. All rights reserved.</p>
+</footer>
+</body>
+</html>
