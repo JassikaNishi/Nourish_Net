@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Alex+Brush&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('plate.jpg'); /* Add your image URL here */
+            background-size: cover;
+            background-position: center;
+            color: #ffd700; /* metallic gold font color */
+            animation: sparkle 8s linear infinite alternate;
+        }
+        @keyframes sparkle {
+            from {
+                background-color: #1a1a1a;
+            }
+            to {
+                background-color: #292929; /* a slightly darker shade for twinkling effect */
+            }
+        }
+        .title-container {
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Dancing Script', cursive;
+        }
+        #restaurant-name {
+            font-size: 48px; /* increased font size for Vellore Kitchen */
+            font-weight: bold;
+            text-decoration: underline; /* underline Vellore Kitchen */
+            margin-bottom: 20px;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .menu {
+            margin-top: 20px;
+            font-family: 'Alex Brush', cursive; /* Alex Brush font for menu */
+            font-size: 24px; /* increased font size for the menu */
+            background-color: rgba(255, 255, 255, 0.1); /* transparent white background for menu */
+            padding: 15px; /* padding around the menu */
+            border-radius: 10px; /* rounded corners for the menu */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* box shadow for a classy look */
+        }
+        .menu h2 {
+            text-decoration: underline; /* underline Menu */
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact-info p:first-child {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <div id="restaurant-name">Vellore Kitchen</div>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <h2>Menu</h2>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity Available</th>
+                </tr>
+                <tr>
+                    <td>Burger</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Pizza</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Salad</td>
+                    <td>10 plates</td>
+                </tr>
+                <tr>
+                    <td>Pasta</td>
+                    <td>12 plates</td>
+                </tr>
+                <!-- Add more menu items as needed -->
+            </table>
+        </div>
+        <div class="contact-info">
+            <p>Survey.No.200/34, New Bye Pass Road, Opp. to Hotel Riverview, Vellore, Tamilnadu – 632004</p>
+            <p>Email: booking@thevellorekitchen.in</p>
+            <p>Food Quantity Available: Limited</p>
+            <p>Ratings: 4.5/5</p>
+        </div>
+    </div>
+
+    <!-- JavaScript can be added here if needed -->
+</body>
+</html>
